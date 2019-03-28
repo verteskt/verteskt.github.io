@@ -1,9 +1,3 @@
----
----
-
-@import "{{ site.theme }}";
-@import "bootstrap";
-
 #main_header {
     background-size: cover;
     background-position: center center;
@@ -29,5 +23,13 @@ header h1 {
 
 #header_nav {
     z-index: 1;
-    background: rgba(255, 255, 255, 0.9)
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: orange;
 }
