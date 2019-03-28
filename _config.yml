@@ -6,3 +6,9 @@ theme: jekyll-theme-cayman
 prose:
   rooturl: "_posts"
   siteurl: "https://verteskt.github.io/"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
