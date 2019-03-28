@@ -2,3 +2,6 @@ name: verteskt.github.io
 markdown: kramdown
 
 theme: jekyll-theme-cayman
+
+prose:
+  rooturl: "_posts"
