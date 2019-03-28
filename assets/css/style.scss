@@ -1,6 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import "bootstrap";
+
 #main_header {
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-color: transparent;
     width: 100%;
