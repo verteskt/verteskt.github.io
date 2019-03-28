@@ -15,3 +15,6 @@ prose:
       - name: "title"
         field:
           value: "Cím"
+      - name: "date"
+        field:
+          value: CURRENT_DATETIME
