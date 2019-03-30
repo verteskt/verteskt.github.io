@@ -47,6 +47,13 @@ layout: default
                 console.log(y);
                 if (y > jumpOn) {
                     header.classList.add("smaller");
+
+                    if (!window.hasScrolled) {
+                        window.hasScrolled = true;
+                        if (window.location.hash.length !== 0) {
+                            window.scrollTo(window.scrollX, window.scrollY - 85);    
+                        }
+                    }
                 } else {
                     if (header.classList.contains("smaller")) {
                         header.classList.remove("smaller");
