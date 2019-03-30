@@ -37,5 +37,15 @@ layout: default
         var randomNum = Math.floor(Math.random() * 7) + 1
         var header = document.querySelector('#main_header')
         header.style.backgroundImage = "url(headers/" + randomNum + ".jpg)"
+
+        window.addEventListener("scroll", function (e) {
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 1000);
+            
+            if (w >= 1000) {
+                var y = window.pageYOffset || document.documentElement.scrollTop,
+                    jumpOn = 301;
+                print(y);
+            }
+        });
     </script>
 </html>
