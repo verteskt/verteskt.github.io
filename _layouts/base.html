@@ -46,10 +46,10 @@ layout: default
                     jumpOn = 201;
                 console.log(y);
                 if (y > jumpOn) {
-                    header.addClass("smaller");
+                    header.classList.add("smaller");
                 } else {
-                    if (header.hasClass("smaller")) {
-                        header.removeClass("smaller");
+                    if (header.classList.contains("smaller");) {
+                        header.classList.remove("smaller");
                     }
                 }
             }
