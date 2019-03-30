@@ -33,4 +33,9 @@ layout: default
         <div class="container">{{ content }}</div>
         
     </body>
+    <script>
+        var randomNum = Math.floor(Math.random() * 7) + 1
+        var header = document.querySelector('#main_header')
+        header.style.backgroundImage = "url(headers/" + randomNum + ".jpg)"
+    </script>
 </html>

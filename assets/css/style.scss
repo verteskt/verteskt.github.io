@@ -4,10 +4,7 @@
 @import "{{ site.theme }}";
 @import "bootstrap";
 
-$randomNum: random(7);
-
 #main_header {
-    background-image: url("headers/#{$randomNum}.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
