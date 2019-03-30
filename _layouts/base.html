@@ -43,8 +43,15 @@ layout: default
             
             if (w >= 1000) {
                 var y = window.pageYOffset || document.documentElement.scrollTop,
-                    jumpOn = 301;
+                    jumpOn = 201;
                 console.log(y);
+                if (y > jumpOn) {
+                    header.addClass("smaller");
+                } else {
+                    if (header.hasClass("smaller")) {
+                        header.removeClass("smaller");
+                    }
+                }
             }
         });
     </script>

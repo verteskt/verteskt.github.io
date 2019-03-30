@@ -14,6 +14,10 @@
     margin-bottom: 2em;
 }
 
+#main_header.smaller {
+    height: 100px;
+}
+
 @media all and (max-width: 1000px) {
     #main_header {
         height: 200px;
