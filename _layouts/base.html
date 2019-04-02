@@ -12,10 +12,10 @@ layout: default
 
         <header id="main_header">
             <div class="container h-100">
-                <div class="row h-75 justify-content-center align-items-center">
+                <div id="main_header_upper" class="row justify-content-center align-items-center">
                     <h1>Vértes Könyvtár</h1>
                 </div>
-                <div class="row h-25 align-items-center justify-content-center">
+                <div id="main_header_lower" class="row align-items-center justify-content-center">
                     <ul id="header_nav" class="nav justify-content-center">
                       <li class="nav-item">
                         <a class="nav-link active" href="#">Kezdőlap</a>
@@ -36,6 +36,8 @@ layout: default
     <script>
         var randomNum = Math.floor(Math.random() * 7) + 1
         var header = document.querySelector('#main_header')
+        var headerUpper = document.querySelector('#main_header_upper')
+        var headerLower = document.querySelector('#main_header_lower')
         header.style.backgroundImage = "url(headers/" + randomNum + ".jpg)"
 
         window.addEventListener("scroll", function (e) {
@@ -47,6 +49,8 @@ layout: default
                 console.log(y);
                 if (y > jumpOn) {
                     header.classList.add("smaller");
+                    headerUpper.classList.add("smaller");
+                    headerLower.classList.add("smaller");
 
                     if (!window.hasScrolled) {
                         window.hasScrolled = true;
@@ -57,6 +61,12 @@ layout: default
                 } else {
                     if (header.classList.contains("smaller")) {
                         header.classList.remove("smaller");
+                    }
+                    if (headerUpper.classList.contains("smaller")) {
+                        headerUpper.classList.remove("smaller");
+                    }
+                    if (headerLower.classList.contains("smaller")) {
+                        headerLower.classList.remove("smaller");
                     }
                 }
             }

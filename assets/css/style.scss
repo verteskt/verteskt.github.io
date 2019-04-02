@@ -19,6 +19,29 @@
     position: fixed;
 }
 
+#main_header_upper {
+    height: 75% !important;
+}
+
+#main_header_lower {
+    height: 25% !important;
+}
+
+#main_header_upper.smaller {
+    height: 60% !important;
+}
+
+#main_header_lower.smaller {
+    height: 40% !important;
+}
+
+
+
+#main_header.smaller h1 {
+    font-size: 2rem;
+    transition: font-size 0.1s;
+}
+
 @media all and (max-width: 1000px) {
     #main_header {
         height: 200px;
