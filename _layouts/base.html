@@ -30,7 +30,7 @@ layout: default
                 </div>
             </div>
         </header>
-        <div class="container">{{ content }}</div>
+        <div id="main" class="container">{{ content }}</div>
         
     </body>
     <script>
@@ -38,6 +38,7 @@ layout: default
         var header = document.querySelector('#main_header')
         var headerUpper = document.querySelector('#main_header_upper')
         var headerLower = document.querySelector('#main_header_lower')
+        var main = document.querySelector('#main')
         header.style.backgroundImage = "url(headers/" + randomNum + ".jpg)"
 
         window.addEventListener("scroll", function (e) {
@@ -51,11 +52,13 @@ layout: default
                     header.classList.add("smaller");
                     headerUpper.classList.add("smaller");
                     headerLower.classList.add("smaller");
+                    main.classList.add("smaller");
 
                     if (!window.hasScrolled) {
                         window.hasScrolled = true;
+                        console.log(y);
                         if (window.location.hash.length !== 0) {
-                            window.scrollTo(window.scrollX, window.scrollY - 85);    
+                            window.scrollTo(window.scrollX, window.scrollY - 100);    
                         }
                     }
                 } else {
@@ -67,6 +70,9 @@ layout: default
                     }
                     if (headerLower.classList.contains("smaller")) {
                         headerLower.classList.remove("smaller");
+                    }
+                    if (main.classList.contains("smaller")) {
+                        main.classList.remove("smaller");
                     }
                 }
             }
