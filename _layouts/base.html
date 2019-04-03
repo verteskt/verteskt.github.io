@@ -52,7 +52,7 @@ layout: default
         var headerUpper = document.querySelector('#main_header_upper')
         var headerLower = document.querySelector('#main_header_lower')
         var main = document.querySelector('#main')
-        header.style.backgroundImage = "url(headers/" + randomNum + ".jpg)"
+        header.style.backgroundImage = "url({{site.baseurl}}/headers/" + randomNum + ".jpg)"
 
         window.addEventListener("scroll", function (e) {
             var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 1000);
