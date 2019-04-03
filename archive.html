@@ -4,11 +4,14 @@ title: Vértes Könyvtár | Archívum
 ---
 
 <h3>Kategóriák szerint</h3>
-<ul class="tag-box inline">
+<ul class="archive_list">
 {% assign tags_list = site.categories %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
-      <li><a href="/categories/{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+      <li>
+        <a href="/categories/{{ tag }}">{{ tag | capitalize }}</a>
+        <span>{{ site.tags[tag].size }}</span>
+    </li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
