@@ -8,7 +8,7 @@ layout: base
             <time>
             <i class="far fa-clock"></i>
             {{ page.date | date: "%Y " }}
-            {% assign m = page.date | date: "%-m" %}
+            {% assign m = page.date | date: "%-m" | minus: 1 %}
             {{ site.months[m] }}
             {{ page.date | date: "%d. %R" }}
             </time>
