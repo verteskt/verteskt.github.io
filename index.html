@@ -9,6 +9,7 @@ title: Vértes Könyvtár | Kezdőlap
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <span class="entry_meta">
                 <time>
+                <i class="far fa-clock"></i>
                 {{ post.date | date: "%Y " }}
                 {% assign m = post.date | date: "%-m" %}
                 {% case m %}
