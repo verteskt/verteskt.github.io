@@ -35,6 +35,8 @@ prose:
               value: 'rendezvény'
             - name: 'Képek'
               value: 'képek'
+            - name: 'Könyvek'
+              value: 'könyvek'
 
 months:
     - január
