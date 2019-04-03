@@ -25,6 +25,16 @@ prose:
         field:
           element: "hidden"
           value: "true"
+      - name: "category"
+        field:
+          element: "select"
+          options:
+            - name: 'Hír'
+              value: 'hír'
+            - name: 'Rendezvény'
+              value: 'rendezvény'
+            - name: 'Képek'
+              value: 'képek'
 
 months:
     - január
