@@ -2,7 +2,7 @@
 published: true
 date: '2019-04-04 00:46 +0200'
 layout: post
-category: hír
+category: hírek
 title: Teszt bejegyzés 4
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet libero nec mattis scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut blandit, quam in tristique pharetra, ligula arcu malesuada tellus, sit amet mattis eros sapien vitae orci. Phasellus metus ex, rutrum in nulla sollicitudin, congue fringilla ipsum. Sed sed tortor elit. Praesent rutrum enim tempor nisi placerat semper et non odio. Donec aliquam consequat elit, non condimentum neque porta a. Pellentesque lobortis pretium congue. Curabitur dignissim leo eleifend ipsum vehicula facilisis. In posuere nisl nec arcu porta lobortis. Praesent scelerisque laoreet sem, at pretium dolor lobortis eu.

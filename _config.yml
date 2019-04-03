@@ -29,10 +29,10 @@ prose:
         field:
           element: "select"
           options:
-            - name: 'Hír'
-              value: 'hír'
-            - name: 'Rendezvény'
-              value: 'rendezvény'
+            - name: 'Hírek'
+              value: 'hírek'
+            - name: 'Rendezvények'
+              value: 'rendezvények'
             - name: 'Képek'
               value: 'képek'
             - name: 'Könyvek'
