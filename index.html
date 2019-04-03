@@ -19,10 +19,10 @@ title: Vértes Könyvtár | Kezdőlap
 <nav aria-label="Oldal navigáció">
   <ul class="pagination justify-content-center>
     {% if paginator.previous_page %}
-        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path }}">Előző</a></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path }}">Előző oldal</a></li>
     {% endif %}
     {% if paginator.next_page %}
-        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path }}">Következő</a></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path }}">Következő oldal</a></li>
     {% endif %}
   </ul>
 </nav>

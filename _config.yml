@@ -1,7 +1,7 @@
 name: verteskt.github.io
 markdown: kramdown
-paginate: 2
-paginate_path: "/page:num/"
+paginate: 5
+paginate_path: "/oldal:num/"
 theme: jekyll-theme-cayman
 
 prose:
