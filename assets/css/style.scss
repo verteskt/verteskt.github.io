@@ -106,7 +106,7 @@ header h1 {
     font-weight: bold;
 }
 
-.entry_category {
+.entry_category a {
     padding: 4px 7px 3px;
     font-size: 1em;
     font-weight: bold;
@@ -115,6 +115,12 @@ header h1 {
     -webkit-font-smoothing: antialiased;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
     background: rgba(0, 0, 0, 0.12);
+}
+
+.entry_category a:hover {
+    color: #555;
+    text-decoration: none;
+    background: rgba(0,0,0,0.2);
 }
 
 .entry_header h3 {
