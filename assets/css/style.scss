@@ -18,14 +18,12 @@
     height: 100px;
     position: fixed;
     background-position: center center;
-/*
-    background-position: center center;
-    -webkit-transition:background-position 1.5s;
-    -moz-transition:background-position 1.5s;
-    -ms-transition:background-position 1.5s;
-    -o-transition:background-position 1.5s;
-    transition:background-position 1.5s;
-*/
+    -webkit-transition:background-position 0.5s;
+    -moz-transition:background-position 0.5s;
+    -ms-transition:background-position 0.5s;
+    -o-transition:background-position 0.5s;
+    transition:background-position 0.5s;
+
 }
 
 #main_header_upper {
