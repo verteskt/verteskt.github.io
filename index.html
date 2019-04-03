@@ -7,7 +7,7 @@ title: Vértes Könyvtár | Kezdőlap
     <article class="entry">
         <header class="entry_header">
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <span class="entry_meta"><time>{{ post.date | date: "%Y-%m-%d" }}</time></span>
+            <span class="entry_meta"><time>{{ post.date | date: "%Y-%m-%d %R" }}</time></span>
         </header>
         <div class="entry_content">
             {{ post.content }}
