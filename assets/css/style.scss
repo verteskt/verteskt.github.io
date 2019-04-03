@@ -3,6 +3,7 @@
 
 @import "{{ site.theme }}";
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
 #main_header {
     background-size: cover;
@@ -77,6 +78,7 @@
 header h1 {
     position: relative;
     color: white;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 .nav-link {
