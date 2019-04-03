@@ -16,7 +16,7 @@ title: Vértes Könyvtár | Archívum
   {% else %}
     {% for tag in tags_list %} 
       <li>
-        <a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
+        <a href="/categories/{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
         <span>{{ tag[1].size }}</span>
     </li>
     {% endfor %}
