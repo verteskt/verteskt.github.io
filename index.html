@@ -15,4 +15,14 @@ title: Vértes Könyvtár | Kezdőlap
     </article>
 {% endfor %}
 
-{{paginator.page}}
+<!-- Pagination links -->
+<nav aria-label="Oldal navigáció">
+  <ul class="pagination justify-content-center>
+    {% if paginator.previous_page %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path }}">Előző</a></li>
+    {% else %}
+        {% if paginator.next_page %}
+        <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path }}">Következő</a></li>
+    {% else %}
+  </ul>
+</nav>
