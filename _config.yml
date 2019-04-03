@@ -1,6 +1,6 @@
 name: verteskt.github.io
 markdown: kramdown
-
+paginate: 2
 theme: jekyll-theme-cayman
 
 prose:
