@@ -96,18 +96,14 @@ header h1 {
 
 .entry_meta {
     color: #aaa;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
     font-size: 0.8em;
     line-height: 1.5em;
+    display: block;
 }
 
 .entry_meta time {
     font-weight: bold;
-}
-
-.entry_header h3 {
-    margin: 0;
-    color: orange;
 }
 
 .entry_content {
