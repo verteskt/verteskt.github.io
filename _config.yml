@@ -25,3 +25,17 @@ prose:
         field:
           element: "hidden"
           value: "true"
+
+months:
+    - január
+    - február
+    - március
+    - április
+    - május
+    - június
+    - július
+    - augusztus
+    - szeptember
+    - október
+    - november
+    - december
