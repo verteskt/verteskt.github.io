@@ -7,7 +7,27 @@ title: Vértes Könyvtár | Kezdőlap
     <article class="entry">
         <header class="entry_header">
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <span class="entry_meta"><time>{{ post.date | date: "%Y-%m-%d %R" }}</time></span>
+            <span class="entry_meta">
+                <time>
+                {{ post.date | date: "%Y " }}
+                {% assign m = post.date | date: "%-m" %}
+                {% case m %}
+                  {% when '1' %}január
+                  {% when '2' %}február
+                  {% when '3' %}március
+                  {% when '4' %}április
+                  {% when '5' %}május
+                  {% when '6' %}június
+                  {% when '7' %}július
+                  {% when '8' %}augusztus
+                  {% when '9' %}szeptember
+                  {% when '10' %}október
+                  {% when '11' %}november
+                  {% when '12' %}december
+                {% endcase %}
+                {{ post.date | date: "%d. %R" }}
+                </time>
+            </span>
         </header>
         <div class="entry_content">
             {{ post.content }}
