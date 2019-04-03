@@ -4,7 +4,7 @@ title: Vértes Könyvtár | Archívum
 ---
 
 <h2>Archívum</h2>
-{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y site.months[%m]'"  %}
+{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y' site.months[0]"  %}
 {% for yearMonth in postsByYearMonth %}
   <h3>{{ yearMonth.name }}</h3>
     <ul>
