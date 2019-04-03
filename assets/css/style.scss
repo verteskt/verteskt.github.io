@@ -17,12 +17,12 @@
 #main_header.smaller {
     height: 100px;
     position: fixed;
-    background-position: center center;
-    -webkit-transition:background-position 0.5s;
-    -moz-transition:background-position 0.5s;
-    -ms-transition:background-position 0.5s;
-    -o-transition:background-position 0.5s;
-    transition:background-position 0.5s;
+    background-position: 0 -200px;
+    -webkit-transition:background-position 0.1s;
+    -moz-transition:background-position 0.1s;
+    -ms-transition:background-position 0.1s;
+    -o-transition:background-position 0.1s;
+    transition:background-position 0.1s;
 
 }
 
