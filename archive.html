@@ -2,40 +2,45 @@
 layout: base
 title: Vértes Könyvtár | Archívum
 ---
+<div class="row">
+    <div class="col-6">
+        <h3>Kategóriák szerint</h3>
+        <ul class="archive_list">
+        {% assign tags_list = site.categories %}  
+          {% if tags_list.first[0] == null %}
+            {% for tag in tags_list %} 
+              <li>
+                <a href="/categories/{{ tag }}">{{ tag | capitalize }}</a>
+                <span>{{ site.tags[tag].size }}</span>
+            </li>
+            {% endfor %}
+          {% else %}
+            {% for tag in tags_list %} 
+              <li>
+                <a href="/categories/{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
+                <span>{{ tag[1].size }}</span>
+            </li>
+            {% endfor %}
+          {% endif %}
+        {% assign tags_list = nil %}
+        </ul>
+    </div>
 
-<h3>Kategóriák szerint</h3>
-<ul class="archive_list">
-{% assign tags_list = site.categories %}  
-  {% if tags_list.first[0] == null %}
-    {% for tag in tags_list %} 
-      <li>
-        <a href="/categories/{{ tag }}">{{ tag | capitalize }}</a>
-        <span>{{ site.tags[tag].size }}</span>
-    </li>
-    {% endfor %}
-  {% else %}
-    {% for tag in tags_list %} 
-      <li>
-        <a href="/categories/{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
-        <span>{{ tag[1].size }}</span>
-    </li>
-    {% endfor %}
-  {% endif %}
-{% assign tags_list = nil %}
-</ul>
-
-<h3>Idő szerint<h3>
-{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
-{% for yearMonth in postsByYearMonth %}
-    <h5 id="archive_date_header">
-    {{ yearMonth.items[0].date | date: "%Y " }}
-    {% assign m = yearMonth.items[0].date | date: "%-m" | minus: 1 %}
-    {{ site.months[m] }}
-    <span>{{ yearMonth.items.size }}</span>
-    </h5>
-    <ul class="archive_list">
-      {% for post in yearMonth.items %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-{% endfor %}
+    <div class="col-6">
+        <h3>Idő szerint</h3>
+        {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
+        {% for yearMonth in postsByYearMonth %}
+            <h5 id="archive_date_header">
+            {{ yearMonth.items[0].date | date: "%Y " }}
+            {% assign m = yearMonth.items[0].date | date: "%-m" | minus: 1 %}
+            {{ site.months[m] }}
+            <span>{{ yearMonth.items.size }}</span>
+            </h5>
+            <ul class="archive_list">
+              {% for post in yearMonth.items %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+</div>
