@@ -122,6 +122,10 @@ header h1 {
     list-style: none;
 }
 
+.archive_list li {
+    padding: 0;
+}
+
 .entry_category a:hover {
     color: #555;
     text-decoration: none;
