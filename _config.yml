@@ -31,8 +31,8 @@ prose:
           options:
             - name: 'Hírek'
               value: 'hírek'
-            - name: 'Rendezvények'
-              value: 'rendezvények'
+            - name: 'Események'
+              value: 'események'
             - name: 'Képek'
               value: 'képek'
             - name: 'Könyvek'
