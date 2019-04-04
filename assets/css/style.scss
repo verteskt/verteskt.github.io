@@ -106,7 +106,7 @@ header h1 {
     font-weight: bold;
 }
 
-.entry_category a, .archive_list li span, #archive_date_header span {
+.entry_category a, .archive_list li span {
     padding: 4px 7px 3px;
     font-size: 1em;
     font-weight: bold;
@@ -120,9 +120,6 @@ header h1 {
 
 .archive_list {
     list-style: none;
-}
-
-.archive_list li {
     padding: 0;
 }
 

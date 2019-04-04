@@ -30,11 +30,10 @@ title: Vértes Könyvtár | Archívum
         <h3>Idő szerint</h3>
         {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
         {% for yearMonth in postsByYearMonth %}
-            <h5 id="archive_date_header">
+            <h5>
             {{ yearMonth.items[0].date | date: "%Y " }}
             {% assign m = yearMonth.items[0].date | date: "%-m" | minus: 1 %}
             {{ site.months[m] }}
-            <span>{{ yearMonth.items.size }}</span>
             </h5>
             <ul class="archive_list">
               {% for post in yearMonth.items %}
