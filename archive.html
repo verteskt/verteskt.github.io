@@ -31,6 +31,7 @@ title: Vértes Könyvtár | Archívum
     {{ yearMonth.items[0].date | date: "%Y " }}
     {% assign m = yearMonth.items[0].date | date: "%-m" | minus: 1 %}
     {{ site.months[m] }}
+     {{ yearMonth.items.size }}
     </h3>
     <ul>
       {% for post in yearMonth.items %}
