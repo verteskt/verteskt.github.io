@@ -15,7 +15,9 @@ title: Vértes Könyvtár | Kezdőlap
                 {{ site.months[m] }}
                 {{ post.date | date: "%d. %R" }}
                 </time>
+                {% if post.category %}
                 <span class="entry_category"><a href="/categories/{{post.category}}">{{post.category}}</a></span>
+                {% endif %}
             </span>
         </header>
         <div class="entry_content">
