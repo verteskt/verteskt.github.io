@@ -28,14 +28,20 @@ Ugyan ki rabolhatta el Marie La Belle színésznő ékszereit? A rendőrség egy
 ##
 
 7.Vlagyimir Szutyejev:A sün,akit meg lehetett simogatni
-![3803061_5.jpg]({{site.baseurl}}/media/3803061_5.jpg)
+![1331a58bb5f5dda61c896b916cd73e2d_big.jpg]({{site.baseurl}}/media/1331a58bb5f5dda61c896b916cd73e2d_big.jpg)
+
+
+
 
 
 Hápisápit, a kacsát, Luszt, az elefántot, Csahost, a kiskutyát és a többi, szárazföldön és vízben, ház körül és a rengetegben élő állatot már a legkisebbek is személyes jó barátnak érzik. És belopódzik ismerőseik egyre táguló körébe Csíkoska, a tigris, aki nagyon szeretne repülni, Trikó, a zebra, aki már unja, hogy olyan csíkos, mint egy matrac, Balegyenes, a lobbanékony természetű oroszlán, Torzsarágó, a nyuszi, aki senkitől sem fél, Ábécé, a csacsi, no meg Bogárka, aki olyan aprócska, hogy még nevet adni is elfelejtettek neki. ##
 
 8.Csapody Kinga:Irány Eger!
-![]({{site.baseurl}}/https://s03.static.libri.hu/cover/65/5/3803061_5.jpg)
-"Messze vagyunk még? Mikor érünk már oda?" - ki ne hallotta volna ezeket a kérdéseket az autóban, amikor a család hosszabb útra indult.
+![3803061_5.jpg]({{site.baseurl}}/media/3803061_5.jpg)
+
+
+
+"Messze vagyunk még? Mikor érünk már oda?" - ki ne hallotta volna ezeket a kérdéseket az autóban, amikor a család hosszabb útra indult### .
 Szalma Edit egy bájos, kissé szeleburdi családot álmodott, majd rajzolt meg. A három gyereket, szüleiket és állataikat ezúttal Egerbe és környékére kísérhetjük el Csapody Kinga meséivel. Kalandjaikat olvasva sok érdekességet tudhatunk meg Egerről, bebarangolhatjuk Szilvásváradot, túrázhatunk a Mátrában, ellátogatunk Mezőkövesdre és Gyöngyösre is. A könyvből egy csomó ötletet lehet meríteni, hogy a környéken miket lehet felfedezni, megmászni és kipróbálni.
 Csatlakozzatok hozzájuk, fedezzétek fel a mesékkel, majd a valóságban is Magyarország egyik legszebb részét! ##
 
