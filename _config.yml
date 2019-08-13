@@ -3,6 +3,9 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/oldal:num/"
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-pagination
 
 prose:
   rooturl: "_posts"
