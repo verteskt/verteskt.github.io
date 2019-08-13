@@ -3,9 +3,7 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/oldal:num/"
 theme: jekyll-theme-cayman
-plugins:
-  - jekyll-feed
-  - jekyll-pagination
+repository: verteskt/verteskt.github.io
 
 prose:
   rooturl: "_posts"
