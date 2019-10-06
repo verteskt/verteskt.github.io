@@ -18,6 +18,55 @@
         <meta name="keywords" content="könyvtár irinyi létavértes kassai vértes" />
         <meta name="description" content="Az Irinyi János Városi Könyvtár oldala" />
         <meta name="revisit-after" content="1 days" />
+
+        <script>
+        var randomNum = Math.floor(Math.random() * 7) + 1
+        document.addEventListener("DOMContentLoaded", function() {
+            var header = document.querySelector('#main_header')
+            var headerUpper = document.querySelector('#main_header_upper')
+            var headerLower = document.querySelector('#main_header_lower')
+            var main = document.querySelector('#main')
+            header.style.backgroundImage = "url({{site.baseurl}}/headers/" + randomNum + ".jpg)"
+
+            window.addEventListener("scroll", function (e) {
+                var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 1000);
+                
+                if (w >= 1000) {
+                    var y = window.pageYOffset || document.documentElement.scrollTop,
+                        jumpOn = 201;
+                    console.log(y);
+                    if (y > jumpOn) {
+                        header.classList.add("smaller");
+                        headerUpper.classList.add("smaller");
+                        headerLower.classList.add("smaller");
+                        main.classList.add("smaller");
+
+                        if (!window.hasScrolled) {
+                            window.hasScrolled = true;
+                            console.log(y);
+                            if (window.location.hash.length !== 0) {
+                                window.scrollTo(window.scrollX, window.scrollY - 100);    
+                            }
+                        }
+                    } else {
+                        if (header.classList.contains("smaller")) {
+                            header.classList.remove("smaller");
+                        }
+                        if (headerUpper.classList.contains("smaller")) {
+                            headerUpper.classList.remove("smaller");
+                        }
+                        if (headerLower.classList.contains("smaller")) {
+                            headerLower.classList.remove("smaller");
+                        }
+                        if (main.classList.contains("smaller")) {
+                            main.classList.remove("smaller");
+                        }
+                    }
+                }
+            });
+        });
+
+    </script>
     </head>
     <body>
 
@@ -58,49 +107,4 @@
             </div>
         </div>
     </body>
-    <script>
-        var randomNum = Math.floor(Math.random() * 7) + 1
-        var header = document.querySelector('#main_header')
-        var headerUpper = document.querySelector('#main_header_upper')
-        var headerLower = document.querySelector('#main_header_lower')
-        var main = document.querySelector('#main')
-        header.style.backgroundImage = "url({{site.baseurl}}/headers/" + randomNum + ".jpg)"
-
-        window.addEventListener("scroll", function (e) {
-            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 1000);
-            
-            if (w >= 1000) {
-                var y = window.pageYOffset || document.documentElement.scrollTop,
-                    jumpOn = 201;
-                console.log(y);
-                if (y > jumpOn) {
-                    header.classList.add("smaller");
-                    headerUpper.classList.add("smaller");
-                    headerLower.classList.add("smaller");
-                    main.classList.add("smaller");
-
-                    if (!window.hasScrolled) {
-                        window.hasScrolled = true;
-                        console.log(y);
-                        if (window.location.hash.length !== 0) {
-                            window.scrollTo(window.scrollX, window.scrollY - 100);    
-                        }
-                    }
-                } else {
-                    if (header.classList.contains("smaller")) {
-                        header.classList.remove("smaller");
-                    }
-                    if (headerUpper.classList.contains("smaller")) {
-                        headerUpper.classList.remove("smaller");
-                    }
-                    if (headerLower.classList.contains("smaller")) {
-                        headerLower.classList.remove("smaller");
-                    }
-                    if (main.classList.contains("smaller")) {
-                        main.classList.remove("smaller");
-                    }
-                }
-            }
-        });
-    </script>
 </html>
